@@ -55,9 +55,9 @@ const router = createBrowserRouter(
       {!localStorage.getItem("isLoggedIn") && (
         <Route path="/signup" element={<SignupPage />} />
       )}
-      {/* {localStorage.getItem("isLoggedIn") && ( */}
-      <Route path="/checkout" element={<CheckoutPage />} />
-      {/* )} */}
+      {localStorage.getItem("isLoggedIn") && (
+        <Route path="/checkout" element={<CheckoutPage />} />
+      )}
     </Route>
   )
 );
