@@ -1,0 +1,35 @@
+import {
+  faClock,
+  faEnvelope,
+  faLocation,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const ContactInfo = () => {
+  return (
+    <div>
+      <h1 className="font-bold text-lg sm:my-2 lg:my-4">CONTACT INFORMATION</h1>
+      <ul className="flex flex-col text-white/[0.8]">
+        <li href="" className="flex pb-1 items-center">
+          <FontAwesomeIcon icon={faLocation} />
+          <span className="ml-3">Delta State, Nigeria.</span>
+        </li>
+        <li href="" className="flex pb-1 items-center">
+          <FontAwesomeIcon icon={faPhone} />
+          <span className="ml-3">+2348109870865</span>
+        </li>
+        <li href="" className="flex pb-1 items-center">
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span className="ml-3">gakpovwovwo@gmail.com</span>
+        </li>
+        <li href="" className="flex pb-1 items-center">
+          <FontAwesomeIcon icon={faClock} />
+          <span className="ml-3">Mon - Sun / 10:00AM - 5:00pm </span>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default ContactInfo;
