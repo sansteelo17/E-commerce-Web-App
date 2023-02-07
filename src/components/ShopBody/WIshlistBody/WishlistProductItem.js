@@ -52,7 +52,7 @@ const WishlistProductItem = (props) => {
 
   return (
     <div>
-      <ul className="flex w-4/5 text-black lg:items-center py-3 text-sm ">
+      <ul className="flex overflow-x-auto sm:w-4/5 text-black lg:items-center py-3 text-sm">
         <div className="flex lg:w-3/4 sm:w-5/6 justify-between items-center">
           <li>
             <img
@@ -61,8 +61,8 @@ const WishlistProductItem = (props) => {
               alt={props.name}
             />
           </li>
-          <li className="font-semibold">{props.name}</li>
-          <li>
+          <li className="font-semibold ml-7 sm:ml-0">{props.name}</li>
+          <li className="ml-7 sm:ml-0">
             <span>{selectedCurrency}</span>
             {!euroIsActive ? (
               <span>{props.price}</span>
@@ -70,18 +70,18 @@ const WishlistProductItem = (props) => {
               <span>{`${Math.floor(props.price * 0.92)}`}</span>
             )}
           </li>
-          <li>{props.availability} left</li>
-          <li className="flex items-center sm:mr-2 lg:px-1">
+          <li className="ml-12 sm:ml-0">{props.availability} left</li>
+          <li className="flex items-center sm:mr-2 lg:px-1 ml-14 sm:ml-0">
             <button onClick={reduceQuantityHandler}>
               <FontAwesomeIcon icon={faMinus} />
             </button>
-            <span className="lg:mx-3 sm:mx-2">{props.quantity}</span>
+            <span className="lg:mx-3 mx-2">{props.quantity}</span>
             <button onClick={increaseQuantityHandler}>
               <FontAwesomeIcon icon={faPlus} />
             </button>
           </li>
         </div>
-        <div className="lg:ml-36 sm:ml-6 sm:mr-4 lg:mr-0">
+        <div className="lg:ml-36 ml-10 sm:ml-6 sm:mr-4 lg:mr-0">
           <li className="flex">
             <button>
               <FontAwesomeIcon

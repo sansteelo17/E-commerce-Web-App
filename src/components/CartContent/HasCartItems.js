@@ -18,9 +18,9 @@ const HasCartItems = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto flex flex-col mt-10 shadow-xl shadow-black/[0.1] border border-black/[0.1] px-4 pt-1 pb-3 rounded">
+    <div className="overflow-x-auto sm:w-11/12 mx-auto flex flex-col mt-10 shadow-xl shadow-black/[0.1] border border-black/[0.1] px-4 pt-1 pb-3 rounded">
       <div>
-        <ul className="flex items-center w-4/5">
+        <ul className="flex items-center sm:w-4/5">
           <div className="flex py-1 w-3/4 justify-between font-bold text-sm text-black/[0.4]">
             <li className="py-1 px-4">Product</li>
             <li className="py-1 px-4">Name</li>
@@ -28,19 +28,20 @@ const HasCartItems = () => {
             <li className="py-1 px-4">Quantity</li>
             <li className="py-1 px-4">Total</li>
           </div>
-          <div className="ml-auto py-1">
+          <div className="ml-40 sm:ml-16 lg:ml-auto py-1">
             <li>
               <button
-                className="py-2 px-4 rounded bg-red-500 text-white font-semibold text-sm"
+                className="py-1 px-3 sm:py-2 sm:px-4 rounded bg-red-500 text-white font-semibold text-sm"
                 onClick={clearCartItemsHandler}
               >
-                Clear All
+                <span>Clear</span>
+                <span className="hidden lg:inline"> All</span>
               </button>
             </li>
           </div>
         </ul>
       </div>
-      <div className="border-y border-black/[0.1]">
+      <div className="border-y border-black/[0.1]" id="cart">
         {cartItems.map((item) => (
           <CartContentItem
             key={item.id}
@@ -53,7 +54,10 @@ const HasCartItems = () => {
           />
         ))}
       </div>
-      <div className="flex justify-between items-center py-5 w-4/5">
+      <div
+        className="flex justify-between items-center py-5 lg:w-4/5"
+        id="endOfCart"
+      >
         <div>
           <button>
             <Link

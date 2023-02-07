@@ -36,15 +36,15 @@ const NavbarLinks = (props) => {
           <FontAwesomeIcon icon={faBars} className="text-lg" />
         </button>
       </div>
-      <div className="px-4 py-1">
+      <div className="px-4 py-1 hidden sm:block">
         <FontAwesomeIcon icon={faPhone} />
         <span className="ml-2">Hotline +2348109870865</span>
       </div>
-      <div className="sm:hidden lg:block py-1">
+      <div className="hidden lg:block py-1">
         <span>Welcome to our market!</span>
       </div>
-      <div className="py-1">
-        <div className="mb-2">
+      <div className="ml-8 sm:ml-0 py-1">
+        <div className="mb-2 ">
           <button onClick={toggleCurrDropdownHandler}>
             <span className="mr-2">{props.selectedCurrency}</span>
             <FontAwesomeIcon icon={faCaretDown} />
@@ -52,15 +52,15 @@ const NavbarLinks = (props) => {
         </div>
         {currencyDropIsActive && <CurrDropdown />}
       </div>
-      <div className="sm:hidden lg:block py-1">
+      <div className="hidden lg:block py-1">
         <Link to="/wishlist">
           <button>WISHLIST ({props.numOfWishlistItems})</button>
         </Link>
       </div>
-      <div className="flex-col px-4 py-1 relative sm:w-24 lg:w-36">
-        <button onClick={toggleAuthHandler} className="sm:pl-9 lg:pl-4">
+      <div className="flex-col px-4 py-1 relative w-24 lg:w-36">
+        <button onClick={toggleAuthHandler} className="pl-9 lg:pl-4">
           <FontAwesomeIcon icon={faUser} />
-          <span className="ml-2 sm:hidden lg:inline">ACCOUNT</span>
+          <span className="ml-2 hidden lg:inline">ACCOUNT</span>
           <FontAwesomeIcon icon={faCaretDown} className="ml-2" />
         </button>
         {authDropIsActive && <AccountDrop />}

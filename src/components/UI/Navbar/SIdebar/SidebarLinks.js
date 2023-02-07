@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const SidebarLinks = (props) => {
   return (
-    <ul className="text-black font-semibold w-full text-2xl border-b border-black/[0.15]">
+    <ul className="text-black font-semibold w-full text-xl sm:text-2xl border-b border-black/[0.15]">
       <li className="py-4">
         <NavLink
           to="/"

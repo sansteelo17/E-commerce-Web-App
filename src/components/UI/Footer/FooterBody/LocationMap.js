@@ -24,7 +24,7 @@ const LocationMap = () => {
   return (
     <div
       ref={mapContainer}
-      className="lg:w-2/5 h-48 mb-12 sm:grow lg:grow-0 sm:mt-4 lg:mt-2"
+      className="hidden sm:block lg:w-2/5 sm:h-48 mb-12 grow lg:grow-0 mt-4 lg:mt-2"
     />
   );
 };

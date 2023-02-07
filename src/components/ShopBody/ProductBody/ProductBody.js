@@ -31,15 +31,15 @@ const ProductBody = ({ productDetail }) => {
   };
 
   return (
-    <div className="flex sm:flex-col lg:flex-row w-full sm:mt-20 lg:mt-14 px-1 font-semibold items-center">
-      <div className="sm:w-full lg:w-2/4">
+    <div className="flex flex-col lg:flex-row w-full mt-20 lg:mt-14 px-1 font-semibold items-center">
+      <div className="w-full lg:w-2/4">
         <img
           src={productDetail.thumbnail}
           alt={productDetail.title}
-          className="h-72 sm:w-full lg:w-11/12 px-8 sm:py-4 lg:py-1"
+          className="h-72 w-full lg:w-11/12 px-8 py-4 lg:py-1"
         />
       </div>
-      <div className="flex-col sm:w-full lg:w-2/4 text-center px-8 sm:py-6 lg:py-3 leading-4">
+      <div className="flex-col w-full lg:w-2/4 text-center px-8 py-6 lg:py-3 leading-4">
         <div>
           <span className="text-3xl">{productDetail.title}</span>
         </div>

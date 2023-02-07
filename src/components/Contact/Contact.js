@@ -136,7 +136,7 @@ const Contact = () => {
       {isSubmitted && (
         <div className="text-center mt-8 flex-col">
           <div>
-            <span className="text-2xl font-bold text-lime-900">
+            <span className="text-xl sm:text-2xl font-bold text-lime-900">
               Success! You will hear from us soon!
             </span>
           </div>

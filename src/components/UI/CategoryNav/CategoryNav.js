@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const CategoryNav = () => {
   return (
-    <div className="max-w-full shadow-sm shadow-gray-900/[0.6] text-sm sm:hidden lg:block">
+    <div className="max-w-full shadow-sm shadow-gray-900/[0.6] text-sm hidden lg:block">
       <ul className="flex w-3/5 mx-auto justify-around text-gray-900/[0.7] font-bold">
         <NavLink
           to="/"

@@ -61,13 +61,13 @@ const WomenProductItem = (props) => {
     <div
       key={props.id}
       id={props.id}
-      className="flex-col lg:w-1/4 sm:w-3/4 sm:px-8 md:px-12 lg:px-4 shadow-lg shadow-black/[0.1] md:mx-1 lg:mx-3 my-4 py-2 rounded-xl text-center border border-black/[0.1]"
+      className="flex-col w-10/12 lg:w-1/4 sm:w-3/4 px-8 md:px-12 lg:px-4 shadow-lg shadow-black/[0.1] md:mx-1 lg:mx-3 my-4 py-2 rounded-xl text-center border border-black/[0.1]"
     >
       <Link to={`/${props.id}`}>
         <div className="w-full">
           <img
             src={props.thumbnail}
-            className="sm:h-64 lg:h-60 w-full sm:pt-6 lg:pt-3 pb-3"
+            className="h-64 lg:h-60 w-full pt-6 lg:pt-3 pb-3"
             alt={`${props.name} thumbnail`}
           />
         </div>

@@ -33,7 +33,7 @@ const Sidebar = (props) => {
             <FontAwesomeIcon
               icon={faXmark}
               fixedWidth
-              className="text-red-500 bg-red-200/[0.3] text-lg p-2 border rounded-2xl"
+              className="text-red-500 bg-red-200/[0.3] text-md sm:text-lg p-2 border rounded-2xl"
               onClick={props.onClose}
             />
           </button>

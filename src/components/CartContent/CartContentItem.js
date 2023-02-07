@@ -29,18 +29,18 @@ const CartContentItem = (props) => {
   };
 
   return (
-    <div>
-      <ul className="flex w-4/5 text-black lg:items-center py-3 text-sm ">
-        <div className="flex lg:w-3/4 sm:w-5/6 justify-between items-center">
+    <div className="overflow-x-auto">
+      <ul className="flex w-4/5 text-black items-center py-3 text-sm ">
+        <div className="flex lg:w-3/4 w-5/6 justify-between items-center">
           <li>
             <img
               src={props.product}
-              className="w-20 sm:px-2 lg:px-1"
+              className="w-20 px-2 lg:px-1"
               alt={props.name}
             />
           </li>
-          <li className="font-semibold">{props.name}</li>
-          <li>
+          <li className="font-semibold ml-4 sm:ml-0">{props.name}</li>
+          <li className="ml-4 sm:ml-0">
             <span>{selectedCurrency}</span>
             {!euroIsActive ? (
               <span>{props.price}</span>
@@ -48,7 +48,7 @@ const CartContentItem = (props) => {
               <span>{`${Math.floor(props.price * 0.92)}`}</span>
             )}
           </li>
-          <li className="flex items-center sm:mr-2 lg:px-1">
+          <li className="flex items-center mr-2 lg:px-1 ml-4 sm:ml-0">
             <button onClick={reduceQuantityHandler}>
               <FontAwesomeIcon icon={faMinus} />
             </button>
@@ -57,7 +57,7 @@ const CartContentItem = (props) => {
               <FontAwesomeIcon icon={faPlus} />
             </button>
           </li>
-          <li>
+          <li className="ml-4 sm:ml-0">
             <span>{selectedCurrency}</span>
             {!euroIsActive ? (
               <span>{existingItem.totalPrice}</span>
@@ -66,7 +66,7 @@ const CartContentItem = (props) => {
             )}
           </li>
         </div>
-        <div className="lg:ml-40 sm:ml-20 sm:mr-4 lg:mr-0">
+        <div className="lg:ml-40 ml-12">
           <li>
             <button>
               <FontAwesomeIcon

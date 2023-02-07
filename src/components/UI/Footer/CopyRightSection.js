@@ -6,7 +6,7 @@ const CopyRightSection = () => {
       </div>
       <div className="flex items-center">
         <p className="text-xs mr-2">Developed by</p>
-        <span className="font-bold">George Akpovwovwo</span>
+        <span className="text-xs sm:text-sm font-bold">George Akpovwovwo</span>
       </div>
     </div>
   );

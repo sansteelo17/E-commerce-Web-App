@@ -106,7 +106,7 @@ const LoginForm = () => {
 
   return (
     <form
-      className="lg:w-2/5 sm:w-3/4 mx-auto p-4 mt-8 lg:rounded-lg sm:rounded-xl shadow-sm shadow-black/[0.3]"
+      className="w-10/12 lg:w-2/5 sm:w-3/4 mx-auto p-4 mt-8 lg:rounded-lg sm:rounded-xl shadow-sm shadow-black/[0.3]"
       onSubmit={submitHandler}
     >
       <div className="flex flex-col items-center my-8 relative">

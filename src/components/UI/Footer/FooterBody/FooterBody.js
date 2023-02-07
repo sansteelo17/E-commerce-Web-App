@@ -4,7 +4,7 @@ import UsefulLinks from "./UsefulLinks";
 
 const FooterBody = () => {
   return (
-    <div className="flex sm:flex-wrap lg:flex-nowrap justify-between py-4 border-y border-white/[0.2]">
+    <div className="flex sm:flex-row flex-wrap lg:flex-nowrap justify-between py-4 border-y border-white/[0.2]">
       <UsefulLinks />
       <ContactInfo />
       <LocationMap />

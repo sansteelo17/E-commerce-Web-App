@@ -25,10 +25,10 @@ const CartDropdown = () => {
 
   return (
     <div
-      className="flex-col bg-white absolute w-72 cart shadow-2xl shadow-black/[0.8] rounded-lg p-3 z-30"
+      className="flex-col bg-white absolute sm:w-72 cart shadow-2xl shadow-black/[0.8] rounded-lg p-3 z-30"
       onMouseLeave={disableCartHandler}
     >
-      <div className="flex justify-between text-black/[0.4] font-bold py-2 border-b border-black/[0.2] text-sm">
+      <div className="flex justify-between text-black/[0.4] font-bold py-2 border-b border-black/[0.2] text-xs sm:text-sm">
         <p>
           <span>{totalQuantityOfItems}</span>
           <span>

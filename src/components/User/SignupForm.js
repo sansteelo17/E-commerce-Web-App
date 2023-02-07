@@ -137,7 +137,7 @@ const SignupForm = () => {
 
   return (
     <form
-      className="lg:w-2/4 sm:w-3/4 mx-auto p-4 mt-8 rounded-xl shadow-sm shadow-black/[0.3]"
+      className="lg:w-2/4 w-11/12 sm:w-3/4 mx-auto p-4 mt-8 rounded-xl shadow-sm shadow-black/[0.3]"
       onSubmit={submitHandler}
     >
       <div className="flex flex-wrap justify-center my-8 relative">
